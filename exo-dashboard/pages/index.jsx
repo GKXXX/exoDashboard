@@ -1,15 +1,10 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { useContext } from 'react'
-import AppContext from '../src/components/AppContext'
-import Expense from '../src/components/Expense'
-import Header from '../src/components/header'
-import Income from '../src/components/Income'
-import ListEntries from '../src/components/ListEntries'
-import TotalResult from '../src/components/TotalResult'
+import Expense from "../src/components/Expense"
+import Header from "../src/components/header"
+import Income from "../src/components/Income"
+import ListEntries from "../src/components/ListEntries"
+import TotalResult from "../src/components/TotalResult"
 
 const Home = () => {
-  
   return (
     
     <div className='w-3/4 mx-auto min-h-screen'>
@@ -37,7 +32,7 @@ const Home = () => {
         <tfoot className='w-full border-2'>
           <tr colSpan="2" className=" p-1 border-2 border-stone-800">
             
-              <td colspan='2' className="p-2 font-bold">Résultats<TotalResult></TotalResult></td>
+              <td colSpan='2' className="p-2 font-bold">Résultats<TotalResult></TotalResult></td>
             
           </tr>
         </tfoot>

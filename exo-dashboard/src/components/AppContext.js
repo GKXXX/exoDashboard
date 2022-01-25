@@ -13,9 +13,9 @@ export const AppContextProvider = (props) => {
       if (actual.amount > 0) {
         return Number(total) + Number(actual.amount)
       }
+
       return Number(total) + 0
     },0)
-    console.log(totalIncome)
     setTotalIncome(totalIncome)
   },[entries])
 
@@ -24,6 +24,7 @@ export const AppContextProvider = (props) => {
       if (actual.amount < 0) {
         return Number(total) + Number(actual.amount)
       }
+
       return Number(total) + 0
     },0)
 
